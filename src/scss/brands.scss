@@ -1,0 +1,173 @@
+.brands {
+  margin: 0;
+  padding: 0;
+  .brands-content {
+    background: #F8F8F8;
+    position: relative;
+    height: 154px;
+    &:after {
+      position:absolute;
+      content:"";
+      right:0px;
+      top: 16px;
+      width: 24px;
+      height:72px;
+      background: linear-gradient(to right, rgba(0,0,0,0),  #F8F8F8);
+      z-index: 100;
+    }
+    .image-slider {
+      .image-slider__wrapper {
+        .image-slider__slide {
+          .image-slider__image {
+            width: 240px;
+            height: 72px;
+            margin: 16px 0 35px 16px;
+          }
+        }
+      }
+      .button-share {
+        display: none;
+      }
+      .swiper-pagination {
+        .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+          line-height: 12px;
+          font-size: 14px;
+          background: #B5B6BC;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .brands {
+    /*width: 768px;*/
+    .brands-about {
+      .brands-about__text {
+      }
+    }
+    .brands-content {
+      height: auto;
+      &:after {
+      }
+      .image-slider {
+        display: flex;
+        flex-direction: column;
+        .image-slider__wrapper {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          .image-slider__slide {
+            margin: 0px 24px 16px 4px;
+            width: 224px;
+            height: 72px;
+            &:hover {
+              .image-slider__image {
+                a {
+                  img {
+                    filter: blur(2px);
+                    transition-duration: 2s;
+                  }
+                }
+              }
+            }
+            .image-slider__image {
+              width: 224px;
+              height: 72px;
+              a {
+                img {
+                  width: 224px;
+                  height: 72px;
+                }
+              }
+            }
+          }
+          .swiper-hide {
+            display: none;
+          }
+        }
+        .button-share {
+          position: relative;
+          display: block;
+          margin: 24px 0 34px 57px;
+          font-family: "TT Lakes Medium";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.2px;
+          color: #1B1C21;
+          tab-index: 1;
+          &:hover {
+            opacity: 0.5;
+            transition-duration: 0.5s;
+            cursor: pointer;
+          }
+          button {
+            border: none;
+            outline: none;
+            background-color: #F8F8F8;
+            padding: 0px;
+            font-family: "TT Lakes Medium";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: #1B1C21;
+          }
+        }
+        .arrow-down {
+          &:before {
+            position: absolute;
+            left: -33px;
+            content: url("../img/img-for-slider/expand.svg");
+          }
+        }
+        .arrow-up {
+          &:before {
+            position: absolute;
+            left: -33px;
+            content: url("../img/img-for-slider/expand.svg");
+            transform: rotate(180deg)
+            translateY(6px);
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .brands {
+    /*width: 1120px;*/
+    .brands-about {
+      .brands-about__text {
+      }
+    }
+    .brands-content {
+      &:after {
+      }
+      .image-slider {
+        .image-slider__wrapper {
+          .image-slider__slide {
+            margin: 0px 24px 16px 4px;
+            width: 240px;
+            height: 72px;
+            .image-slider__image {
+              width: 240px;
+              height: 72px;
+              a {
+                img {
+                  width: 240px;
+                  height: 72px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

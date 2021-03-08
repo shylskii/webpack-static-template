@@ -1,0 +1,86 @@
+@import "header-style";
+@import "main-block";
+@import "brands";
+@import "repair";
+@import "price";
+@import "footer";
+@import "side-menu";
+@import "calbackpopup";
+@import "feedback";
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url('//src/fonts/TTLakes-Bold.eot');
+  src: local('//src/fonts/TT Lakes Bold'), local('//src/fonts/TTLakes-Bold'),
+    url('//src/fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('//src/fonts/TTLakes-Bold.woff') format('woff'),
+    url('//src/fonts/TTLakes-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+};
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('/src/fonts/TTLakes-Medium.eot');
+  src: local('/src/fonts/TT Lakes Medium'), local('/src/fonts/TTLakes-Medium'),
+    url('/src/fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('/src/fonts/TTLakes-Medium.woff') format('woff'),
+    url('/src/fonts/TTLakes-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+};
+
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('/src/fonts/TTLakes-Regular.eot');
+  src: local('/src/fonts/TT Lakes Regular'), local('/src/fonts/TTLakes-Regular'),
+    url('/src/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/src/fonts/TTLakes-Regular.woff') format('woff'),
+    url('/src/fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+};
+
+$bc:#F2F2F2;
+$bc2:#F8F8F8;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bc;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  .body-container {
+      min-width: 320px;
+      background: $bc2;
+      margin:0 auto;
+  }
+}
+button {
+  border: none;
+  outline: none;
+  padding: 0;
+  &:hover, &:focus {
+    transition-duration: 0.5s;
+    opacity: 0.33;
+    cursor: pointer;
+  }
+}
+.separator {
+  padding: 16px;
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-top: 1px solid #D9FFF5;
+  .separator__text {
+    font-family: "TT Lakes Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+}
+

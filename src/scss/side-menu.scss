@@ -1,0 +1,208 @@
+.burger {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.8);
+  z-index: 100;
+  .blur_hide3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .menu-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+    .menu-header {
+      display: flex;
+      flex-direction: row;
+      margin-top: 18px;
+      .menu-header__button {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 6px;
+        button {
+          background-color: white;
+        }
+      }
+      .burger-close {
+      }
+      .menu-header__image {
+        margin-right: auto;
+      }
+    }
+    .menu-main {
+      .menu-main-menu {
+        .menu-main-menu__list {
+          padding-left: 24px;
+          li {
+            list-style-type: none;
+            margin-top: 24px;
+            transition-duration: 300ms;
+            &:focus {
+              a:before {
+                display: inline-block;
+              }
+            }
+            &:hover, &:focus {
+              transform: translateX(20px);
+            }
+            a {
+              position: relative;
+              text-decoration: none;
+              font-family: "TT Lakes Medium";
+              font-size: 16px;
+              line-height: 24px;
+              letter-spacing: -0.2px;
+              color: #1B1C21;
+              &:before {
+                content: "";
+                position: absolute;
+                left: -44px;
+                top: -4px;
+                display: inline-block;
+                width: 4px;
+                height: 32px;
+                background-color: #41F6D7;
+                display: none;
+              }
+              &:visited {
+                color: #7E7E82;
+              }
+              &:hover:before {
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+    }
+    .menu-footer {
+      margin-top: 32px;
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 24px;
+        .info-buttons {
+          display: flex;
+          flex-direction: row;
+          .info-buttons__button {
+            margin-right: 16px;
+            button {
+              background-color: white;
+            }
+          }
+        }
+        .info-mail {
+          margin-top: 16px;
+          transition-duration: 500ms;
+          &:hover, &:focus {
+            transform: translateX(10px);
+          }
+          a {
+            text-decoration: none;
+            font-family: "TT Lakes Medium";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            color: #1B1C21;
+          }
+        }
+        .info-number {
+          margin-top: 12px;
+          transition-duration: 500ms;
+          &:hover, &:focus {
+            transform: translateX(10px);
+          }
+          a {
+            text-decoration: none;
+            font-family: TT Lakes;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.6px;
+            color: #1B1C21;
+          }
+        }
+      }
+      .lang {
+        margin-left: 24px;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: row;
+        .lang__button {
+          margin-right: 7px;
+          &:hover, &:focus {
+            transform: translateY(5px);
+          }
+          button {
+            font-family: "TT Lakes Medium";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}
+.burger-exit {
+  display: none;
+}
+@media (min-width: 768px) {
+  .burger {
+    .menu-container {
+      width: 320px;
+    }
+  }
+}
+@media (min-width: 768px) {
+ .burger {
+   .menu-footer {
+     position: absolute;
+     top: 820px;
+   }
+ }
+}
+
+@media (min-width: 1440px) {
+  .burger {
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 320px;
+    height: auto;
+    .menu-container {
+      box-shadow: none;
+      .menu-header {
+        .burger-close {
+          display: none;
+        }
+        .menu-headerLogo {
+          margin-left: 24px;
+        }
+      }
+      .menu-footer {
+        position: absolute;
+        top: 690px;
+      }
+    }
+  }
+  .burger-exit {
+    display: block;
+  }
+}
