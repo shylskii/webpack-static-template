@@ -113,7 +113,7 @@
       .arrow-down {
         &::before {
           display: inline-block;
-          content: url(/img/icon.svg);
+          content: url(img/icon.svg);
           margin-right: 16px;
           margin-left: 24px;
         }
@@ -122,7 +122,7 @@
         &::before {
           display: inline-block;
           transform: rotate(180deg);
-          content: url(/img/icon.svg);
+          content: url(img/icon.svg);
           margin-right: 16px;
           margin-left: 24px;
         }
