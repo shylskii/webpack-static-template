@@ -50,11 +50,16 @@ body {
   display: flex;
   flex-direction: row;
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
   .body-container {
       min-width: 320px;
       background: $bc2;
       margin:0 auto;
   }
+}
+.overflowHidden {
+  overflow: hidden;
 }
 button {
   border: none;

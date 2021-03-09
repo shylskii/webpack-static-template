@@ -6,6 +6,8 @@
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.8s ease 0s;
+  transform: translate(0,0);
   .blur_hide2 {
     position: absolute;
     top: 0;
@@ -95,7 +97,9 @@
   }
 }
 .feedback-hide {
-  display: none;
+  transform: translate(0,-100%);
+  opacity: 0;
+  visibility: hidden;
 }
 @media (min-width: 768px) {
   .feedback-popup {
@@ -108,6 +112,21 @@
           left: -93px;
           background-color: rgba(255, 255, 255, 0.8);
         }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .feedback-popup {
+    .feedback-popup-container {
+      width: 440px;
+      .feedback-popup-form {
+        input {
+          width: 376px;
+        }
+      }
+      .feedback-popup-sendButton {
+        margin: 23px 32px 0 auto;
       }
     }
   }
