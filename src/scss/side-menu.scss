@@ -6,6 +6,8 @@
   left: 0;
   background-color: rgba(255,255,255,0.8);
   z-index: 100;
+  transition: all 0.8s ease 0s;
+  transform: translate(0,0);
   .blur_hide3 {
     position: absolute;
     top: 0;
@@ -126,7 +128,7 @@
           }
           a {
             text-decoration: none;
-            font-family: TT Lakes;
+            font-family: "TT Lakes Bold";
             font-style: normal;
             font-weight: bold;
             font-size: 24px;
@@ -161,7 +163,9 @@
   }
 }
 .burger-exit {
-  display: none;
+  transform: translate(0,-100%);
+  opacity: 0;
+  visibility: hidden;
 }
 @media (min-width: 768px) {
   .burger {

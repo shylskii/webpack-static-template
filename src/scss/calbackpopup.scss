@@ -40,7 +40,7 @@
       border-radius: 2px;
     }
     .callback-popup-title {
-      font-family: TT Lakes;
+      font-family: "TT Lakes Bold";
       font-style: normal;
       font-weight: bold;
       font-size: 24px;
@@ -58,7 +58,7 @@
         border: 1px solid #EAEAEA;
         border-radius: 8px;
         &::placeholder {
-          font-family: TT Lakes;
+          font-family: "TT Lakes Medium";
           font-style: normal;
           font-weight: 500;
           font-size: 16px;
@@ -71,7 +71,7 @@
       }
     }
     .callback-popup-description {
-      font-family: TT Lakes;
+      font-family: "TT Lakes Medium";
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -80,7 +80,7 @@
       margin: 16px 16px 0 16px;
       a {
         text-decoration: none;
-        font-family: TT Lakes;
+        font-family: "TT Lakes Medium";
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
