@@ -123,7 +123,7 @@
           margin-right: 20px;
           text-decoration: none;
           white-space: nowrap;
-          font-family: 'TT Lakes';
+          font-family: 'TT Lakes Medium';
           font-weight: 500;
           font-style: normal;
           color: #7E7E82;
@@ -711,7 +711,9 @@
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.8);
-  z-index: 100; }
+  z-index: 100;
+  transition: all 0.8s ease 0s;
+  transform: translate(0, 0); }
   .burger .blur_hide3 {
     position: absolute;
     top: 0;
@@ -830,7 +832,9 @@
             background-color: white; }
 
 .burger-exit {
-  display: none; }
+  transform: translate(0, -100%);
+  opacity: 0;
+  visibility: hidden; }
 
 @media (min-width: 768px) {
   .burger .menu-container {
