@@ -7,6 +7,7 @@ var body1 = document.querySelector('body')
 export function callbackClickHandler () {
   callbackButtonExit.addEventListener('click', function () {
     popup.classList.add('callback-hide');
+    body1.classList.remove('overflowHidden');
   });
   for (let i= 0; i < callbackButton.length; i++) {
     callbackButton[i].addEventListener('click', function () {

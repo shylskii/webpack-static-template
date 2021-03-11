@@ -11,6 +11,7 @@ export function burgerClickHandler () {
   });
   burgerExitButton.addEventListener('click', function () {
     burgermenu.classList.add('burger-exit');
+    body3.classList.remove('overflowHidden');
   });
   var hideburger = document.querySelector('.burger-exit')
   if (document.documentElement.clientWidth >= 1440) {
